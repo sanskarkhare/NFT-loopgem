@@ -1,0 +1,17 @@
+.form-price {
+  margin-top: 80px;
+}
+.form-price input {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.flex-price p {
+  font-size: 14px;
+}
+
+.flex-line {
+  display: flex;
+  align-items: center;
+  margin-top: -13px;
+  margin-bottom: 10vh;
+}

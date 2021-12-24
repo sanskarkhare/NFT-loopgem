@@ -1,0 +1,37 @@
+.explore-page{
+  padding-top: 3rem;
+}
+
+.explore-page form {
+  display: flex;
+  justify-content: center;
+}
+.explore-page > p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.explore-page input {
+  width: 50vw;
+  border: 2px dashed rgba(255, 255, 255, 0.658);
+  margin-bottom: 40px;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10vw;
+}
+.explore-dropdown {
+  border-radius: 5px !important;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 7px;
+  padding-right: 10px;
+  font-style: italic;
+  font-size: 1rem;
+}

@@ -1,0 +1,23 @@
+.copy-clipboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #d3aa4b;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+.copy-clipboard input {
+  border: none;
+  padding: 0;
+  padding-left: 10px;
+}
+.copy-clipboard button {
+  background-color: #d3aa4b;
+  border: 2px solid #d3aa4b;
+  border-radius: 5px;
+  padding: 2px;
+}
+.copy-clipboard button:focus {
+  box-shadow: 0 0 10px #d3aa4b;
+}

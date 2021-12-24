@@ -1,0 +1,46 @@
+.share-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.share-buttons button {
+  display: flex;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 0 10px;
+}
+.share-buttons button:hover {
+  background-color: #000;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  height: 195px;
+  width: 195px;
+}
+.profile h2 {
+  margin-bottom: 0;
+}
+.profile p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .share-buttons button p {
+    display: none;
+  }
+}
+
+.nft-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

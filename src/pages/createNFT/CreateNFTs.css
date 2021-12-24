@@ -1,0 +1,12 @@
+.margin-heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.createnft-form {
+  padding: 0 8vw;
+}
+.createnft-form input,
+.createnft-form textarea {
+  border: 2px dashed rgba(255, 255, 255, 0.658);
+}

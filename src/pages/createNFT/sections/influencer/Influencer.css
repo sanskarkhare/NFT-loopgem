@@ -1,0 +1,72 @@
+.influencer-content {
+  margin-top: 40px;
+}
+
+.influencer-heading {
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.influencer-cards {
+  margin-top: 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.influencer-card {
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.influencer-image {
+  height: 25vh;
+}
+
+.influencer-details {
+  margin-top: -10px;
+}
+.influencer-details p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.added-influencer {
+  display: flex;
+}
+
+.extra-card {
+  min-width: 200px;
+  height: 225px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #d3aa4b 0%, #b78513 100%);
+}
+
+.cancel-influencer {
+  margin-top: 10px;
+  margin-left: -8px;
+  padding: 5px 3px;
+  padding-left: 10px;
+  background-color: #d3aa4b;
+  color: black;
+  font-size: 20px !important;
+  z-index: -1;
+  border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .influencer-cards {
+    gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(240px, 1fr);
+    overflow-x: auto;
+  }
+}

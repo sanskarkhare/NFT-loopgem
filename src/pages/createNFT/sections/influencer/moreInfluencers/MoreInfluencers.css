@@ -1,0 +1,30 @@
+.more-influencers {
+  margin-top: 10px;
+}
+.more-influencers p {
+  color: white;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.more-influencers {
+  width: 900px;
+}
+
+.influencers-search {
+  background-color: #fff;
+  color: black;
+  border: 2px dashed rgba(39, 39, 39, 0.658);
+  width: 600px;
+  margin: -10px 200px -15px 200px;
+}
+
+.more-influencers-cards {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.more-influencers-cards .influencer-card > img {
+  height: 20vh;
+}

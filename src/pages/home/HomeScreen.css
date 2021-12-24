@@ -1,0 +1,141 @@
+body {
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+.space-heading {
+  font-size: 37px;
+  margin-top: 0;
+  letter-spacing: 12px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 97%;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  resize: none;
+}
+
+input[type="url"] {
+  margin: 20px 0 40px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  padding: 0 8vw;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+.half-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.line {
+  width: 60px;
+  height: 1px;
+  background-color: #d3aa4b;
+}
+.line-heading h3 {
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+.yellow {
+  color: #d3aa4b;
+}
+.reflection-effect {
+  -webkit-box-reflect: below 0px
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.004),
+      rgba(0, 0, 0, 0.055),
+      rgba(0, 0, 0, 0.192)
+    );
+}
+
+.cards {
+  margin-top: 10vh;
+  display: grid;
+  justify-content: space-between;
+}
+.card {
+  text-align: center;
+  height: fit-content;
+  padding: 30px 60px;
+  border-radius: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tag {
+  color: #000;
+  background-color: #d3aa4b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 20px;
+}
+.tag-icon {
+  font-size: 15px !important;
+}
+
+.tab {
+  color: grey !important;
+}
+.tab:focus {
+  color: #fff !important;
+  background-color: grey !important;
+  border-radius: 5px;
+}
+.css-1aquho2-MuiTabs-indicator {
+  display: none;
+}
+
+.popup {
+  text-align: center;
+}
+.popup-title {
+  font-weight: bolder !important;
+  font-size: 33px !important;
+  margin-bottom: -15px !important;
+  margin-top: 10px !important;
+}
+.popup-content {
+  color: #000 !important;
+}
+
+@media screen and (max-width: 900px) {
+  input,
+  textarea {
+    width: 93%;
+  }
+}

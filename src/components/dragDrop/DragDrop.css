@@ -1,0 +1,30 @@
+.dragdrop {
+  border: 2px dashed rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  height: 178px;
+  min-width: 200px;
+  padding: 20px;
+}
+.drop-area {
+  margin: auto;
+}
+input[type="file"] {
+  border: none;
+  padding: 0;
+}
+.dragdrop p {
+  display: inline;
+  background-color: rgb(239, 239, 239);
+  border-radius: 5px 2px 2px 5px;
+  padding: 3px 10px;
+  box-shadow: 1px 1px grey;
+  color: black;
+}
+.drop-target p {
+  background-color: #d3aa4b;
+}
+.dragdrop ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: -15px;
+}

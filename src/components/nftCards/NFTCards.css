@@ -1,0 +1,50 @@
+.nft-cards {
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 8vw;
+  justify-content: center;
+}
+.nft-card {
+  height: fit-content;
+  background-color: #fff;
+  color: black;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.author-details {
+  margin: -10px 10px 0 10px;
+}
+
+.top-details {
+  display: flex;
+  align-items: center;
+}
+.top-details .info {
+  text-align: left;
+}
+.top-details p {
+  margin-top: -20px;
+  font-size: 12px;
+}
+
+.bottom-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.price-left {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #d3aa4b;
+}
+.price-left img {
+  display: inline;
+}
+.img-cl {
+  height: 35vh;
+  width: 13vw;
+}

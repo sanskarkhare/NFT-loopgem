@@ -1,0 +1,131 @@
+.singlenft {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5vw;
+  margin-bottom: 15vh;
+}
+
+.singlenft-img {
+  height: 50vh;
+  width: auto;
+}
+
+.singlenft-ratings {
+  margin-top: -20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.singlenft-details h2 {
+  font-size: 40px;
+  margin-top: -10px;
+}
+.singlenft-details > p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: -10px;
+}
+
+.singlenft-price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.singlenft-price h3 {
+  font-size: 42px;
+}
+.singlenft-price p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: -10px;
+  margin-bottom: 0px;
+}
+
+.singlenft-buttons button {
+  border: 1px solid;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  margin-right: 20px;
+}
+.button-white {
+  background-color: #fff;
+  color: #000;
+  border: black;
+}
+.button-black {
+  background-color: #000;
+  color: white;
+  border: white;
+}
+
+.side-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.side-icon {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+  .singlenft-img {
+    height: 40vh;
+    width: auto;
+  }
+  .singlenft-details h2 {
+    font-size: 28px;
+  }
+  .singlenft-price img {
+    height: 32px;
+  }
+  .singlenft-price h3 {
+    font-size: 28px;
+  }
+  .singlenft-buttons button {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .singlenft-img {
+    height: 35vh;
+    width: auto;
+  }
+  .singlenft-details h2 {
+    font-size: 22px;
+  }
+  .singlenft-price img {
+    height: 25px;
+  }
+  .singlenft-price h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .singlenft-img {
+    height: 50vh;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .singlenft {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .side-icons {
+    flex-direction: row;
+  }
+}

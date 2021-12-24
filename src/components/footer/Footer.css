@@ -1,0 +1,38 @@
+footer {
+  text-align: center;
+  margin-top: 10vh;
+  padding: 5vh 0;
+  width: 100vw;
+  height: 250px;
+  background-color: rgb(148, 119, 52);
+}
+
+.desc {
+  padding: 0 20px;
+}
+
+.footer-nav {
+  justify-content: center;
+}
+
+.social-icons {
+  font-size: 20px !important;
+}
+.social-icons svg {
+  margin: 0 20px;
+  margin-top: 20px;
+}
+
+.copyright {
+  color: black;
+  margin-top: 3vh;
+}
+
+@media screen and (max-width: 600px) {
+  .desc {
+    font-size: 12px;
+  }
+  .footer-nav h2 {
+    font-size: 12px;
+  }
+}
