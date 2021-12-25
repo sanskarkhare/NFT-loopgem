@@ -35,3 +35,15 @@
   font-style: italic;
   font-size: 1rem;
 }
+.con {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  background-color: wheat;
+  font-size: medium;
+  font-weight: 600;
+  color: rgb(230, 172, 14);
+  width: 20vw;
+}

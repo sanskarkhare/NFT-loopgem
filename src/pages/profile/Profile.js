@@ -28,10 +28,13 @@ import Copy from "../../components/copyToClipboard/Copy";
 function Profile() {
 
   const [nfts, setNfts] = useState([])
+  const [mynfts, setMynfts] = useState([])
   const [sold, setSold] = useState([])
   const [loadingState, setLoadingState] = useState('not-loaded')
+  const[mld, setMld] = useState(false)
   useEffect(() => {
     loadNfts()
+    loadmyNFTs()
   }, [])
 
 async function loadNfts() {
@@ -71,6 +74,32 @@ async function loadNfts() {
   console.log(err);
 }
 }
+async function loadmyNFTs() {
+  const web3Modal = new Web3Modal()
+  const connection = await web3Modal.connect()
+  const provider = new ethers.providers.Web3Provider(connection)
+  const signer = provider.getSigner()
+    
+  const marketContract = new ethers.Contract(nftmarketaddress, Market.abi, signer)
+  const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
+  const data = await marketContract.fetchMyNFTs()
+  
+  const items = await Promise.all(data.map(async i => {
+    const tokenUri = await tokenContract.tokenURI(i.tokenId)
+    const meta = await axios.get(tokenUri)
+    let price = ethers.utils.formatUnits(i.price.toString(), 'ether')
+    let item = {
+      price,
+      tokenId: i.tokenId.toNumber(),
+      seller: i.seller,
+      owner: i.owner,
+      image: meta.data.image,
+    }
+    return item
+  }))
+  setMynfts(items)
+  setMld(true)
+}
 
 
   return (
@@ -91,6 +120,33 @@ async function loadNfts() {
         <div className="nft-cards">
           {
             nfts.map((nft,idx) => (
+              
+                <NFTCards nft={nft} key={idx}/>
+            
+            ))
+          } 
+        </div>
+      </section>
+        </>
+        
+      )
+    }
+    {
+      (loadingState  && !mynfts.length) ? 
+      (
+        <>
+          <h1 className="py-10 px-20 text-3xl">No assets Owned</h1>
+        </>
+      )
+      : 
+      (<>
+      <section>
+              <h1 className="space-heading margin-heading">NFTs Owned</h1>
+              <br />
+              <br />
+        <div className="nft-cards">
+          {
+            mynfts.map((nft,idx) => (
               
                 <NFTCards nft={nft} key={idx}/>
             
